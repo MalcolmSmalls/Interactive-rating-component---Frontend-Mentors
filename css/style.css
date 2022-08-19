@@ -27,8 +27,28 @@
 body {
   font-size:15px;
   font-family: 'Overpass', sans-serif;
+  background:black;
 }
 
+section{
+  background-color:hsl(213, 19%, 18%);
+  width:28%;
+  margin:100px auto;
+  padding: 7% 2%;
+  border-radius: 7%;
+}
+
+h1 {
+  font-weight:700;
+  color:white;
+  margin-bottom:3%;
+}
+
+p {
+  margin-top:0;
+  color:hsl(217, 12%, 63%);
+  line-height:170%;
+}
 .orange{
   background-color:hsl(25, 97%, 53%);
   text-transform:uppercase;
