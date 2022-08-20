@@ -87,7 +87,7 @@ p {
   cursor:pointer;
 }
 
-.rating:active {
+.activated {
   background-color:hsl(25, 97%, 53%);
   color:white;
   cursor:pointer;
