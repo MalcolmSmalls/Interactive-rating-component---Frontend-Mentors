@@ -19,7 +19,7 @@
 
   <!-- Rating state start -->
 
-  <section>
+  <section id="main">
   <div class="star">
   <img src="/images/icon-star.svg" class="starIcon" alt="star icon"/>
 </div>
@@ -42,20 +42,26 @@
     <input type="radio" name="Rating" value="4" class="rating">4
     <input type="radio" name="Rating" value="5" class="rating">5 -->
   </div>
+  
     <button class="orange">Submit</button>
+    <p class="error"></p>
     </section>
 
+    
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-  <h2>You selected <span></span> out of 5</h2>
+  <section id="thankYou">
+  <h2>You selected <span class="rated"></span> out of 5</h2>
 
   <h1>Thank you!</h1>
 
 
   <p>We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!</p>
+
+</section>
 
   <!-- Thank you state end -->
 

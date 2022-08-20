@@ -30,7 +30,7 @@ body {
   background:black;
 }
 
-section{
+#main{
   background-color:hsl(213, 19%, 18%);
   background: linear-gradient(180deg, hsl(213, 19%, 18%) 0%, hsl(216, 12%, 8%) 100%);
   width:28%;
@@ -110,6 +110,24 @@ p {
   margin-right:10px;
 }
 
+#thankYou{
+  display:none;
+  background-color:hsl(213, 19%, 18%);
+  background: linear-gradient(180deg, hsl(213, 19%, 18%) 0%, hsl(216, 12%, 8%) 100%);
+  width:28%;
+  margin:100px auto;
+  padding: 2% 2%;
+  border-radius: 7%;
+  height:450px;
+}
+
+.error{
+  position:relative;
+  top: -29px;
+  left: 114px;
+  font-size:13px;
+  color:red;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/

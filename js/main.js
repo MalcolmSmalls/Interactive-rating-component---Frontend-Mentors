@@ -60,6 +60,7 @@ const ratings = Array.from(document.querySelectorAll('.rating'))
 ratings.forEach(rating => rating.addEventListener('click', activation))
 
 function activation(e){
+    document.querySelector('.error').style.display ='none'
     ratings.forEach(element => {
         if(element !== this){
             element.classList.remove('activated')
@@ -67,7 +68,20 @@ function activation(e){
     })
     this.classList.toggle('activated')
     value = this.value
-    console.log(e.path[0])
+    console.log(value)
+}
+
+document.querySelector('.orange').addEventListener('click', submit)
+
+function submit(){
+    if(value === 0){
+        document.querySelector('.error').innerText = 'You must pick a rating'
+        return
+    }else{
+    document.querySelector('.rated').innerText = value
+    document.querySelector('#main').style.display ='none'
+    document.querySelector('#thankYou').style.display ='block'
+    }
 }
 
 // function removeActivation(clicked){
@@ -80,8 +94,8 @@ function activation(e){
     // e.target.classList.toggle('activated')
 //}
 
-let oneActivated = document.querySelector('.oneStar').classList.contains('activated')
-let twoActivated = document.querySelector('.twoStars').classList.contains('activated')
-let threeActivated = document.querySelector('.threeStars').classList.contains('activated')
-let fourActivated = document.querySelector('.fourStars').classList.contains('activated')
-let fiveActivated = document.querySelector('.fiveStars').classList.contains('activated')
+// let oneActivated = document.querySelector('.oneStar').classList.contains('activated')
+// let twoActivated = document.querySelector('.twoStars').classList.contains('activated')
+// let threeActivated = document.querySelector('.threeStars').classList.contains('activated')
+// let fourActivated = document.querySelector('.fourStars').classList.contains('activated')
+// let fiveActivated = document.querySelector('.fiveStars').classList.contains('activated')
